@@ -6,9 +6,11 @@
     <a-scene embedded arjs='trackingMethod: best;'>
       <a-marker preset="hiro">
 
-        
-      <a-gltf-model src="https://pavele11.github.io/test/scene.gltf"></a-gltf-model>
-      </a-marker>
+        <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+        </a-assets>
+     <!-- <a-gltf-model src="https://pavele11.github.io/test/scene.gltf"></a-gltf-model>
+      </a-marker> -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
