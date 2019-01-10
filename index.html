@@ -6,14 +6,12 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
   	<a-marker preset="hiro">
-            
-                       <a-assets>
-    <a-asset-item id="tree" src="scene.gltf">
-  </a-assets>
-
-  <!-- Using the asset management system. -->
-  <a-gltf-model src="#tree"></a-gltf-model>
-
+           
+                           <!--Adding a glTF 2.0 model to your scene-->
+      <a-entity
+      gltf-model-next="src: url(https://lucianoabriata.altervista.org/jsinscience/arjs/armodeling/duck.gltf);"
+      >
+      </a-entity>
                            
                            
   	</a-marker>
