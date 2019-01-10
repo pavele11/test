@@ -7,9 +7,13 @@
     <a-scene embedded arjs>
   	<a-marker preset="hiro">
             
-                           <a-entity
-gltf-model-next=”src: url(scene.gltf);” >
-</a-entity>
+                       <a-assets>
+    <a-asset-item id="tree" src="scene.gltf">
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-gltf-model src="#tree"></a-gltf-model>
+
                            
                            
   	</a-marker>
