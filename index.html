@@ -5,12 +5,13 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
   
   <body style='margin : 0px; overflow: hidden;'>
-  
+  <a-light type="ambient" color="white" intensity="7"></a-light>
+          <a-light type="point" color="white" position="4 3 4"></a-light>
+    
     <a-scene embedded arjs='trackingMethod: best;'>
           <!--<a-light type="hemisphere" color="white" intensity="1"></a-light>-->
           <!--<a-light color="white" position="-1 0.5 0" intensity="1"></a-light>-->
-          <a-light type="ambient" color="white" intensity="7"></a-light>
-          <a-light type="point" color="white" position="4 3 4"></a-light>
+          
       
           <a-assets>
           <a-asset-item id="rick" src="https://pavele11.github.io/test/rick/rick8.gltf"></a-asset-item>
