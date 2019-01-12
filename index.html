@@ -18,7 +18,14 @@
 
         <a-marker preset="hiro">
 
-          <a-entity gltf-model="#rick"></a-entity>
+          <a-entity gltf-model="#rick">
+          <a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+            
+          </a-entity>
 
         </a-marker>
 
